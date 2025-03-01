@@ -1,0 +1,102 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #84b9e8, #a7eaed);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.task-manager {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+}
+
+h1 {
+    color: #333;
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #97b8dc;
+    outline: none;
+    border-radius: 5px;
+}
+input:focus{
+    border: 2px solid #007bff;
+}
+
+.add-button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-button:hover {
+    background: #0056b3;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+    max-height: 300px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.task-list::-webkit-scrollbar{
+    width: 8px;
+}
+.task-list::-webkit-scrollbar-thumb{
+    background-color: rgb(212, 203, 203);
+    border-radius: 4px;
+}
+
+.task-item {
+    background: #f3ecec;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    gap: 4px;
+}
+.task-item span{
+    text-wrap: nowrap;
+    overflow: auto;
+}
+.task-item span::-webkit-scrollbar{
+    height: 0;
+}
+
+.delete-button {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.delete-button:hover {
+    background: #c82333;
+}
